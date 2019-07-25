@@ -1,0 +1,130 @@
+html{
+    height: 100%; 
+}
+body{
+    height: 100%;
+    position: relative;
+    font-family: 'Source Sans Pro';
+}
+video{
+    position: fixed;
+    width: auto;
+    height:auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index:0;
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #cd9557;
+    opacity: 0.7;
+    z-index: 1;
+}
+.content{
+    position: relative;
+    overflow: hidden;
+    z-index: 2;
+    height: 100%;
+    width: 40.5rem;
+    
+}
+.content .content-bg{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 46, 102, 0.8);
+    transform: skewX(-8deg);
+    transform-origin: top right; 
+}
+ .content .content-dec{
+    color: #fff;
+    padding: 7rem 10rem 3rem 3rem; 
+ }
+.content .content-dec h1{
+    font-family: 'Merriweather';
+    font-weight: 700;
+    font-size: 3.8rem; 
+    margin-bottom: 16px;
+}
+.content .content-dec p{
+    font-size: 1.3rem;
+    margin-bottom: 3rem; 
+    color: #ddd;
+}
+.content .content-dec p strong{
+    font-weight: 700;
+    color: #fff;
+}
+.content .content-dec .input-group input{
+    height: auto;
+    font-size: 1rem;
+    padding: 1rem;
+    font-weight: 300;
+}
+.content .content-dec .input-group button{
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 1rem;
+    background-color: #cd9557;
+    border-color: #cd9557;
+   
+} 
+.input-group button:active , .input-group button:focus , .input-group button:hover{
+    background-color: #ba7c37 !important;
+    border-color: #ba7c37 !important;
+}
+.social-icon{
+    margin: 0;
+    position: absolute;
+    right: 2.5rem;
+    bottom: 10px; 
+    z-index: 2;
+    width: auto;
+}
+.social-icon a{
+    display: block;
+    width: 4rem;
+    height: 4rem;
+    line-height: 4rem;
+    text-align: center;
+    color: #fff;
+    background-color: rgba(0, 46, 102, 0.8);
+    font-size: 2rem;
+    border-radius: 100%;
+    margin-top: 2rem;
+    cursor: pointer;
+}
+.social-icon a:hover{
+    background-color: #002E66;
+}
+@media (min-width: 500px) and (max-width: 768px) {
+    .content{
+        width: 75%;
+    }
+    .content .content-dec{
+        padding: 7rem 5rem 3rem 3rem; 
+    }
+    .content .content-dec h1{
+        font-size: 2rem;
+    }
+    .content .content-dec p{
+        font-size: 1rem;
+    }
+    .content .content-dec .input-group input{
+        font-size: 13px;
+    }
+    .content .content-dec .input-group button{
+        font-size: 10px;
+    }
+}
